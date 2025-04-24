@@ -12,7 +12,7 @@
 
 C++ = c++
 C++FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
-SRC = main.cpp phonebook.cpp contact.cpp utils.cpp
+SRC = main.cpp phonebook.cpp contact.cpp utils.cpp search.cpp
 
 OBJS = $(SRC:.cpp=.o)
 

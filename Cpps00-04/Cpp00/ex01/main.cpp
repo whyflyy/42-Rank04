@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "main.hpp"
-#include "phonebook.hpp"
 
 void	print_banner(void)
 {
@@ -54,12 +53,13 @@ int	main(void)
 		if (!(std::getline(std::cin, command)))
 			return (1);
 		command = ToUpper(command);
-		if (command.compare("ADD") == 0) //TODO fazer funcao que permite usar comando minusculo ou maiusculo (add ou ADD ou ate outros casos (AdD?))
+		if (command.compare("ADD") == 0)
 			ft_add_contact(&Phonebook);
 		//std::cout << "You will be able to add soon !:)" << std::endl; //TODO: add_contact
-		else if (command.compare("SEARCH") == 0) //TODO fazer funcao que permite usar comando minusculo ou maiusculo (add ou ADD ou ate outros casos (AdD?))
-			std::cout << "What do you seek?" << std::endl; //TODO search_contact
-		else if (command.compare("EXIT") == 0) //TODO fazer funcao que permite usar comando minusculo ou maiusculo (add ou ADD ou ate outros casos (AdD?))
+		else if (command.compare("SEARCH") == 0)
+			search_contact(&Phonebook);
+		//std::cout << "What do you seek?" << std::endl; //TODO search_contact
+		else if (command.compare("EXIT") == 0)
 		{
 			std::cout << RED << "Exiting program" << RESET << std::endl;
 			break ;

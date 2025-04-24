@@ -5,6 +5,7 @@
 # include <string>
 # include <iomanip>
 # include <ctime>
+# include <limits>
 # include "phonebook.hpp"
 # include "contact.hpp"
 
@@ -24,6 +25,7 @@
 # define MAGENTA_BG	"\033[48;5;183m"
 # define CYAN_BG	"\033[48;5;87m"
 
-void	ft_add_contact(Phonebook *phonebook);
+void	ft_add_contact(Phonebook *Phonebook);
+void    search_contact(Phonebook *Phonebook);
 
 #endif

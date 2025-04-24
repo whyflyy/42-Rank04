@@ -17,6 +17,7 @@
 # include <string>
 # include <iomanip>
 # include <ctime>
+# include "contact.hpp"
 
 # define MAX_CONTACTS 8
 
@@ -25,13 +26,17 @@ class Phonebook
 	private:
 		int	_num_entries;
 	public:
-		//Contact contacts[MAX_CONTACTS] //TODO DESCOMENTAR
+		Contact contacts[MAX_CONTACTS];
 		//Constructors
-		Phonebook(/* args */);
+		Phonebook();
 		~Phonebook();
 
 		//Member funtions
-		void	addContact(std::string Name, std::string LastName, std::string Nickname, std::string PhoneNumber, std::string Secret);
+		void	addContact(std::string Name, std::string LastName, std::string Nickname, 
+					std::string PhoneNumber, std::string Secret);
+		int		getNumEntries();
 };
+
+int	search_oldest_entry(Contact contacts[MAX_CONTACTS]);
 
 #endif

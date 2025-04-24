@@ -19,19 +19,26 @@
 class Contact
 {
 	private:
-		std::string	Name;
-		std::string	LastName;
-		std::string	Nickname;
-		std::string	PhoneNumber;
-		std::string	Secret;
+		std::string	_Name;
+		std::string	_LastName;
+		std::string	_Nickname;
+		std::string	_PhoneNumber;
+		std::string	_Secret;
+		time_t		_Created;
 	public:
 		Contact();
+		Contact(std::string first_name, std::string last_name, std::string nick_name,
+				std::string phone_number, std::string darkest_secret);
 		~Contact();
 
-		//TODO funcao
-		//TODO funcao
+		//TODO fetch functions
+		std::string		getName() const;
+		std::string		getLastName() const;
+		std::string		getNickName() const;
+		std::string		getPhoneNumber() const;
+		std::string		getSecret() const;
+		time_t			getCreated() const;
 
-		//TODO fetch funcao
 
 };
 

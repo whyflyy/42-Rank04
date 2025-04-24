@@ -13,14 +13,53 @@
 #include "contact.hpp"
 
 
-Contact::Contact(){
+Contact::Contact()
+{
+	//TODO tem de ter alguma aqui dentro?
+}
+
+Contact::Contact(std::string Name, std::string LastName, std::string Nickname, std::string PhoneNumber, std::string Secret)
+{
+	_Name = Name;
+	_LastName = LastName;
+	_Nickname = Nickname;
+	_PhoneNumber = PhoneNumber;
+	_Secret = Secret;
+	time(&_Created);
 }
 
 Contact::~Contact(){
 }
 
-//TODO funcao
+//Fetchers
+std::string		Contact::getName() const
+{
+	return (_Name);
+}
 
-//TODO funcao
+std::string		Contact::getLastName() const
+{
+	return (_LastName);
+}
 
-//TODO fetchers
+std::string		Contact::getNickName() const
+{
+	return (_Nickname);
+}
+
+std::string		Contact::getPhoneNumber() const
+{
+	return (_PhoneNumber);
+}
+
+std::string		Contact::getSecret() const
+{
+	return (_Secret);
+}
+
+time_t			Contact::getCreated() const
+{
+	return (_Created);
+}
+
+
