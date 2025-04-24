@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 12:17:16 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/04/24 15:38:53 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:05:30 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void    search_contact(Phonebook *Phonebook)
 	
 	if (!(std::cin >> index))
 	{
-		std::cout << "Invalid index" << std::endl;
+		std::cout << RED << "Invalid Index!" << RESET << std::endl;
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	}

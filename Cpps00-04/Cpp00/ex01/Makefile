@@ -20,10 +20,9 @@ NAME = phonebook
 
 all: $(NAME)
 
-#TODO fazer print de mensagens ao fazer make ao inves de mostrar files;
-
 $(NAME):$(OBJS)
-	$(C++) $(C++FLAGS) $(OBJS) -o $(NAME)
+	@$(C++) $(C++FLAGS) $(OBJS) -o $(NAME)
+	@echo "\033[0;32m [✔] \033[0m Built $(NAME)"
 
 %.o: %.cpp
 	$(C++) $(C++FLAGS) -c $< -o $@

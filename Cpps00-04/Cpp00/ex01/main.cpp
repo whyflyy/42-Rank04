@@ -55,10 +55,8 @@ int	main(void)
 		command = ToUpper(command);
 		if (command.compare("ADD") == 0)
 			ft_add_contact(&Phonebook);
-		//std::cout << "You will be able to add soon !:)" << std::endl; //TODO: add_contact
 		else if (command.compare("SEARCH") == 0)
 			search_contact(&Phonebook);
-		//std::cout << "What do you seek?" << std::endl; //TODO search_contact
 		else if (command.compare("EXIT") == 0)
 		{
 			std::cout << RED << "Exiting program" << RESET << std::endl;

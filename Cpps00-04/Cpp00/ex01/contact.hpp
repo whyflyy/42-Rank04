@@ -31,15 +31,13 @@ class Contact
 				std::string phone_number, std::string darkest_secret);
 		~Contact();
 
-		//TODO fetch functions
+		//Fetch functions
 		std::string		getName() const;
 		std::string		getLastName() const;
 		std::string		getNickName() const;
 		std::string		getPhoneNumber() const;
 		std::string		getSecret() const;
 		time_t			getCreated() const;
-
-
 };
 
 #endif
