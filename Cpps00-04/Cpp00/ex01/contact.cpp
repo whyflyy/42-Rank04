@@ -13,9 +13,7 @@
 #include "contact.hpp"
 
 
-Contact::Contact()
-{
-	//TODO tem de ter alguma aqui dentro?
+Contact::Contact(){
 }
 
 Contact::Contact(std::string Name, std::string LastName, std::string Nickname, std::string PhoneNumber, std::string Secret)
