@@ -12,14 +12,14 @@
 
 #include "phonebook.hpp"
 
+//Constructor
 Phonebook::Phonebook()
 {
 	_num_entries = 0;
 }
 
-Phonebook::~Phonebook()
-{
-	
+//Destructor
+Phonebook::~Phonebook(){
 }
 
 int	Phonebook::getNumEntries()

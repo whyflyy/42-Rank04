@@ -12,7 +12,7 @@
 
 #include "contact.hpp"
 
-
+//Constructors
 Contact::Contact(){
 }
 
@@ -26,6 +26,7 @@ Contact::Contact(std::string Name, std::string LastName, std::string Nickname, s
 	time(&_Created);
 }
 
+//Destructors
 Contact::~Contact(){
 }
 

@@ -13,10 +13,7 @@
 #include "main.hpp"
 
 void	print_banner(void)
-{
-	const std::string RED_NEW = "\033[38;5;9m";  // Background blue
-	
-	// Print banner with tabs and slashes
+{	
     std::cout << MAGENTA;
 	std::cout << std::endl << std::endl;
     std::cout << "\n\t██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗██████╗   █████╗   █████╗  ██   ██  " << std::endl;
@@ -30,11 +27,11 @@ void	print_banner(void)
 
 std::string ToUpper(std::string str)
 {
-    std::string newstr = str;  // Copy original string to allocate space
+    std::string newstr = str;
 
     for (size_t i = 0; i < str.length(); i++)
     {
-        newstr[i] = std::toupper(str[i]);  // Use indexing, not pointers
+        newstr[i] = std::toupper(str[i]);
     }
 
     return newstr;
