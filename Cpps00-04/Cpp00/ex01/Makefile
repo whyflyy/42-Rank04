@@ -28,10 +28,12 @@ $(NAME):$(OBJS)
 	$(C++) $(C++FLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	@rm -f $(OBJS)
+	@echo "\033[0;31m [✗] \033[0m Cleaned object files"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo "\033[0;31m [✗] \033[0m Removed $(NAME)"
 
 re: fclean all
 
