@@ -40,7 +40,7 @@ void    ft_add_contact(Phonebook *Phonebook)
 
 	while (PhoneNumber.empty()){
 		std::cout << BLUE << "Enter Phone Number please! :) " << RESET;
-		std::getline(std::cin, PhoneNumber); //TODO verificar se sao so numeros??
+		std::getline(std::cin, PhoneNumber);
 		if (PhoneNumber.empty())
 			std::cout << CYAN << "Phone Number cannot be empty. Please enter again! :(" << RESET << std::endl;
 	}

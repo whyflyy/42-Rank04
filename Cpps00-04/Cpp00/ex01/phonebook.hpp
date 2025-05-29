@@ -11,13 +11,13 @@
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
-# include <iostream>
-# include <string>
-# include <iomanip>
-# include <ctime>
-# include "contact.hpp"
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <ctime>
+#include "contact.hpp"
 
 # define MAX_CONTACTS 8
 

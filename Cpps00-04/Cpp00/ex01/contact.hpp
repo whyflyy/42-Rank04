@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
-# define CONTACT_HPP
+#define CONTACT_HPP
 
-# include <iostream>
-# include <iomanip>
+#include <iostream>
+#include <iomanip>
 
 class Contact
 {
