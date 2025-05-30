@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 16:36:22 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/05/29 16:56:24 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/05/30 11:20:14 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class HumanA
 
 	public:
 		//Constructor
-		HumanA(std::string Name, Weapon &weapon);
+		HumanA(std::string Name, Weapon &NewWeapon);
 		//Destructor
 		~HumanA();
 		//Member functions

@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 16:36:30 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/05/29 17:03:05 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/05/30 11:20:29 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,12 @@ class HumanB
 	public:
 		//Constructor
 		HumanB(std::string Name);
+		HumanB(std::string Name, Weapon &NewWeapon);
 		//Destructor
 		~HumanB();
 		//Member functions
 		void	attack(void);
-		void	setWeapon(Weapon &weapon);
+		void	setWeapon(Weapon &NewWeapon);
 };
 
 #endif

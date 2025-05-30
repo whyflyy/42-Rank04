@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 16:26:46 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/05/29 16:35:21 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/05/30 10:13:44 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ Weapon::Weapon(std::string type)
 	_type = type;
 }
 
-Weapon::~Weapon()
+Weapon::~Weapon(void)
 {
 }
