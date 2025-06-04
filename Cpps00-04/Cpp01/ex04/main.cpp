@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 11:54:47 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/05/30 16:08:23 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/04 14:41:01 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,18 @@ std::string	replaceWords(std::string fileContent, std::string str1, std::string 
 	std::string	buffer = fileContent;
 
 	std::size_t	index = buffer.find(str1);
-	
+	if (index == std::string::npos)
+	{
+		std::cout << RED << "No string to be replaced found :(" << RESET << std::endl;
+		return ("");
+	}
+	while (index != std::string::npos)
+	{
+		buffer.erase(index, str1.size());
+		buffer.insert(index, str2);
+		index = buffer.find(str1, index + str2.size());
+	}
+	return (buffer);
 }
 
 int getInput(std::string& input)
@@ -67,20 +78,38 @@ int getInput(std::string& input)
 	}
 }
 
+void	createOutFile(std::string fileContent, std::string fileName)
+{
+	std::ofstream	outFile;
+	std::string		replaceFileName = fileName + "_replace";
+	
+	outFile.open(replaceFileName.c_str());
+	if (outFile.fail())
+	{
+		std::cout << RED << "Failed to open outFile!" << RESET << std::endl;
+		return ;
+	}
+
+	outFile << fileContent;
+	outFile.close();
+	std::cout << GREEN << replaceFileName << " has been created!" << RESET << std::endl;
+	return ;
+}
+
 int main(void)
 {
 	std::string fileName, str1, str2, fileContent;
 	std::ifstream inFile;
 
-	std::cout << BLUE << "Please insert the file name: " << RESET;
+	std::cout << BLUE << "Please insert the file name: " << RESET; //TODO: pelo menos neste, esta a bugar quando se da tab e apaga
 	if(!getInput(fileName))
 		return (1);
 
-	std::cout << BLUE << "Please insert the string to be replaced: " << RESET;
+	std::cout << BLUE << "Please insert the string to be replaced: " << RESET; //TODO: esta a bugar quando se da tab e apaga, mas parece ser visual
 	if(!getInput(str1))
 		return (1);
 
-	std::cout << BLUE << "Please insert the string that will replace: " << RESET;
+	std::cout << BLUE << "Please insert the string that will replace: " << RESET; //TODO: esta a bugar quando se da tab e apaga, mas parece ser visual
 	if(!getInput(str2))
 		return (1);
 
@@ -100,8 +129,12 @@ int main(void)
 
 	fileContent = replaceWords(fileContent, str1, str2);
 
-	
-	
+	if (fileContent.empty())
+		return (1);
+
+	createOutFile(fileContent, fileName);
+	inFile.close();
+	return (0);
 }
 
 
