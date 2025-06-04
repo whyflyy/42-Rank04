@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 11:54:47 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/04 14:41:01 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/04 16:25:15 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,15 +101,15 @@ int main(void)
 	std::string fileName, str1, str2, fileContent;
 	std::ifstream inFile;
 
-	std::cout << BLUE << "Please insert the file name: " << RESET; //TODO: pelo menos neste, esta a bugar quando se da tab e apaga
+	std::cout << BLUE << "Please insert the file name: " << RESET;
 	if(!getInput(fileName))
 		return (1);
 
-	std::cout << BLUE << "Please insert the string to be replaced: " << RESET; //TODO: esta a bugar quando se da tab e apaga, mas parece ser visual
+	std::cout << BLUE << "Please insert the string to be replaced: " << RESET;
 	if(!getInput(str1))
 		return (1);
 
-	std::cout << BLUE << "Please insert the string that will replace: " << RESET; //TODO: esta a bugar quando se da tab e apaga, mas parece ser visual
+	std::cout << BLUE << "Please insert the string that will replace: " << RESET;
 	if(!getInput(str2))
 		return (1);
 
