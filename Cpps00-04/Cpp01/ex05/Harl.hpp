@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 16:34:46 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/04 16:54:02 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/09 16:49:30 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,5 @@ class Harl
 		//Member function
 		void	complain(std::string level);
 };
-
 
 #endif

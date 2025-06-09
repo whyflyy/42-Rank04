@@ -6,13 +6,13 @@
 #    By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/04 16:29:34 by jcavadas          #+#    #+#              #
-#    Updated: 2025/06/04 16:33:39 by jcavadas         ###   ########.fr        #
+#    Updated: 2025/06/09 16:56:18 by jcavadas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
 C++FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 
 OBJS = $(SRC:.cpp=.o)
 

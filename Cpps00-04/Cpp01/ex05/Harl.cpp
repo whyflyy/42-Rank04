@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 16:35:31 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/04 16:59:23 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/09 16:49:41 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,44 @@ Harl::Harl()
 Harl::~Harl()
 {
 }
-//DEBUG - BLUE/MAGENTA "Watch where the birds fly, they will lead us to land."
-//INFO - GREEN/BLUE "Six hundred men, six hundred miles of open sea."
-//WARNING - YELLOW "This land confuses your mind."
-//ERROR - RED "All I hear are screams, every time I dare to close my eyes."
+
+void	Harl::debug(void)
+{
+	std::cout << MAGENTA << "[DEBUG] " << RESET << "Watch where the birds fly, they will lead us to land." << std::endl;
+}
+
+void	Harl::info(void)
+{
+	std::cout << BLUE << "[INFO] " << RESET << "Six hundred men, six hundred miles of open sea." << std::endl;
+}
+
+void	Harl::warning(void)
+{
+	std::cout << YELLOW << "[WARNING] " << RESET << "This land confuses your mind." << std::endl;
+}
+
+void	Harl::error(void)
+{
+	std::cout << RED << "[ERROR] " << RESET << "All I hear are screams, every time I dare to close my eyes." << std::endl;
+}
+
+void	Harl::complain(std::string level)
+{
+	void (Harl::*funcs[])() = {
+		&Harl::debug,
+		&Harl::info,
+		&Harl::warning,
+		&Harl::error};
+
+	std::string	levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	
+	for (int i = 0; i < 4; i++)
+	{
+		if (level == levels[i])
+		{
+			(this->*funcs[i])();
+			return ;
+		}
+	}
+	std::cout << CYAN << "[NOTHING] " << RESET << "Where am I?" << std::endl;
+}
