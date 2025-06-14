@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:17:04 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/13 13:28:40 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/13 13:29:05 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,13 @@ class Fixed
 		Fixed();
 		//Copy Constructor
 		Fixed(const Fixed &copy);
+		//Constructor with int and float
+		Fixed(const int num);
+		Fixed(const float num);
 		//Copy assignement operator overload
 		Fixed &operator=(const Fixed &copy);
 		//Destructor
 		~Fixed();
-		
-		//////////////////////////////////////////Extras
-		//Constructor with int and float
-		Fixed(const int num);
-		Fixed(const float num);
-		
 		//Member functions
 		int		getRawBits(void) const;
 		void	setRawBits(int const raw);

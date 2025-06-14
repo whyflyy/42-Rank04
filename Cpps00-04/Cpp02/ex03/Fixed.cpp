@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:17:10 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/13 11:28:06 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/13 13:57:21 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,31 @@
 
 Fixed::Fixed()
 {
-	std::cout << GREEN << "Default constructor called" << RESET << std::endl;
+	//std::cout << GREEN << "Default constructor called" << RESET << std::endl;
 	_value = 0;
 }
 
 Fixed::Fixed(const Fixed &copy)
 {
-	std::cout << CYAN << "Copy constructor called" << RESET << std::endl;
+	//std::cout << CYAN << "Copy constructor called" << RESET << std::endl;
 	_value = copy.getRawBits();
+}
+
+Fixed::Fixed(const int num)
+{
+	//std::cout << BLUE << "Int contstant constuctor called" << RESET << std::endl;
+	_value = num << _fractional;
+}
+
+Fixed::Fixed(const float num)
+{
+	//std::cout << BLUE << "Float constant constructor called" << RESET << std::endl;
+	_value = static_cast<int>(roundf(num * (1 << _fractional)));
 }
 
 Fixed &Fixed::operator=(const Fixed &copy)
 {
-	std::cout << MAGENTA << "Copy assignment operator called" << RESET << std::endl;
+	//std::cout << MAGENTA << "Copy assignment operator called" << RESET << std::endl;
 	
 	if (this != &copy)
 	{
@@ -37,24 +49,12 @@ Fixed &Fixed::operator=(const Fixed &copy)
 
 Fixed::~Fixed()
 {
-	std::cout << RED << "Destructor called" << RESET << std::endl;
-}
-
-Fixed::Fixed(const int num)
-{
-	std::cout << BLUE << "Int contstant constuctor called" << RESET << std::endl;
-	_value = num << _fractional;
-}
-
-Fixed::Fixed(const float num)
-{
-	std::cout << BLUE << "Float constant constructor called" << RESET << std::endl;
-	_value = static_cast<int>(roundf(num * (1 << _fractional)));
+	//std::cout << RED << "Destructor called" << RESET << std::endl;
 }
 
 int		Fixed::getRawBits(void) const
 {
-	std::cout << YELLOW << "getRawBits member function called" << RESET << std::endl;
+	//std::cout << YELLOW << "getRawBits member function called" << RESET << std::endl;
 	return (_value);
 }
 
