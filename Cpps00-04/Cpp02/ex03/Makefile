@@ -6,7 +6,7 @@
 #    By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/13 13:25:10 by jcavadas          #+#    #+#              #
-#    Updated: 2025/06/14 16:42:15 by jcavadas         ###   ########.fr        #
+#    Updated: 2025/06/16 14:39:07 by jcavadas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
-NAME = Fixed
+NAME = bsp
 
 all: $(NAME)
 
