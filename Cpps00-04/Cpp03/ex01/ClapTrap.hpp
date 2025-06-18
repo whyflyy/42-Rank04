@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 09:38:18 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/18 16:24:17 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/18 16:22:48 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class ClapTrap
 		unsigned int	_Ep;
 		unsigned int	_Ad;
 	public:
-        //Orthodox Canonical form
+		//Orthodox Canonical form
 		//Default Constructor
 		ClapTrap();
 		//Constructor with name
