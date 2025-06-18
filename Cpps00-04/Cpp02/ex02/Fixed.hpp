@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:17:04 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/13 13:28:40 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/18 09:43:11 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 #define YELLOW		"\033[38;5;220m"
 #define MAGENTA		"\033[38;5;183m"
 #define CYAN    	"\033[38;5;87m"
-#define ORANGE "\033[38;5;208m"
+#define ORANGE 		"\033[38;5;208m"
 
 #include <iostream>
 #include <limits>
