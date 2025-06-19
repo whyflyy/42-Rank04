@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 15:46:57 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/18 16:26:22 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/19 15:44:39 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class ScavTrap : public ClapTrap
 {
 	private:
-		/* data */
+		bool	_guardState;
 	public:
 		//Orthodox Canonical form
 		//Default Constructor
@@ -33,7 +33,8 @@ class ScavTrap : public ClapTrap
 		~ScavTrap();
 
 		//Member functions
-		
+		void	guardGate(void);
+		void	attack(const std::string& target);
 };
 
 

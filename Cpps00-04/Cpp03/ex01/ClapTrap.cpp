@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 09:38:10 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/18 14:18:04 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/19 15:39:49 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //Default constructor
 ClapTrap::ClapTrap()
 {
-	std::cout << GREEN << "Default constructor called" << RESET << std::endl;
+	std::cout << GREEN << "ClapTrap Default constructor called" << RESET << std::endl;
 	_Name = "default";
 	_Hp = 10;
 	_Ep = 10;
@@ -24,7 +24,7 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string Name)
 {
-	std::cout << GREEN << "Name constructor called" << RESET << std::endl;
+	std::cout << GREEN << "ClapTrap Name constructor called" << RESET << std::endl;
 	_Name = Name;
 	_Hp = 10;
 	_Ep = 10;
@@ -34,7 +34,7 @@ ClapTrap::ClapTrap(std::string Name)
 //Copy Constructor
 ClapTrap::ClapTrap(const ClapTrap &copy)
 {
-	std::cout << CYAN << "Copy constructor called" << RESET << std::endl;
+	std::cout << CYAN << "ClapTrap Copy constructor called" << RESET << std::endl;
 	this->_Name = copy._Name;
 	this->_Hp = copy._Hp;
 	this->_Ep = copy._Ep;
@@ -43,7 +43,7 @@ ClapTrap::ClapTrap(const ClapTrap &copy)
 //Copy assignement operator overload
 ClapTrap &ClapTrap::operator=(const ClapTrap &copy)
 {
-	std::cout << MAGENTA << "Copy assignment operator called" << RESET << std::endl;
+	std::cout << MAGENTA << "ClapTrap Copy assignment operator called" << RESET << std::endl;
 	if (this != &copy)
 	{
 		this->_Name = copy._Name;
@@ -57,7 +57,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &copy)
 //Destructor
 ClapTrap::~ClapTrap()
 {
-	std::cout << RED << "Destructor called" << RESET << std::endl;
+	std::cout << RED << "ClapTrap Destructor called" << RESET << std::endl;
 }
 
 //Getters

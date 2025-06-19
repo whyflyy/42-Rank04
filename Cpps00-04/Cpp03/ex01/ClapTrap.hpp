@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 09:38:18 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/18 16:22:48 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/19 15:48:03 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string		_Name;
 		unsigned int	_Hp;
 		unsigned int	_Ep;
