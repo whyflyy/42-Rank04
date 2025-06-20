@@ -6,17 +6,17 @@
 #    By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/18 09:36:21 by jcavadas          #+#    #+#              #
-#    Updated: 2025/06/18 09:36:22 by jcavadas         ###   ########.fr        #
+#    Updated: 2025/06/20 13:24:22 by jcavadas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
-C++FLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = !!!!!!!!!!!!!!!!!!!!!!
+C++FLAGS = -Wshadow -Wall -Wextra -Werror -std=c++98
+SRC = main.cpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp DiamondTrap.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
-NAME = !!!!!!!!!!!!!!!!!
+NAME = DiamondTrap
 
 all: $(NAME)
 
