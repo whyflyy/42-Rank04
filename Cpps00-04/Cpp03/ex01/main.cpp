@@ -6,7 +6,7 @@
 /*   By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 15:45:51 by jcavadas          #+#    #+#             */
-/*   Updated: 2025/06/20 00:46:10 by jcavadas         ###   ########.fr       */
+/*   Updated: 2025/06/20 12:42:02 by jcavadas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ int main(void)
 
     std::cout << SEPARATOR << "Initial values" << SEPARATOR << std::endl;	
 	
-	std::cout << "Claptrap 1: " << Scandinavian.getName() << std::endl;
+	std::cout << "ScavTrap 1: " << Scandinavian.getName() << std::endl;
 	std::cout << "HP: " << Scandinavian.getHp() << std::endl;
 	std::cout << "Energy Points: " << Scandinavian.getEnergy() << std::endl;
 	std::cout << "Attack Damage: " << Scandinavian.getDamage() << std::endl;
 
 	std::cout << std::endl;
 
-	std::cout << "Claptrap 2: " << Scrappy.getName() << std::endl;
+	std::cout << "ScavTrap 2: " << Scrappy.getName() << std::endl;
 	std::cout << "HP: " << Scrappy.getHp() << std::endl;
 	std::cout << "Energy Points: " << Scrappy.getEnergy() << std::endl;
 	std::cout << "Attack Damage: " << Scrappy.getDamage() << std::endl;
@@ -82,6 +82,19 @@ int main(void)
  
     wait_for_enter();	
 
+    std::cout << SEPARATOR << "Guarding the Gate" << SEPARATOR << std::endl;	
+
+	std::cout << Scrappy.getName() << "'s Current HP: " << Scrappy.getHp() << std::endl;
+	Scrappy.guardGate();
+
+	std::cout << std::endl;
+
+	std::cout << Scandinavian.getName() << "'s Current HP: " << Scandinavian.getHp() << std::endl;
+	Scandinavian.guardGate();
+	Scandinavian.guardGate();
+ 
+    wait_for_enter();
+	
 	std::cout << GREEN << "\nAll tests completed.\n" << RESET;
 
 	return  (0);

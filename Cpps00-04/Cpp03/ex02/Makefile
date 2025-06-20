@@ -6,17 +6,17 @@
 #    By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/18 09:36:08 by jcavadas          #+#    #+#              #
-#    Updated: 2025/06/18 09:36:16 by jcavadas         ###   ########.fr        #
+#    Updated: 2025/06/20 12:44:13 by jcavadas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
 C++FLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = !!!!!!!!!!!!!!!!!!!!!!
+SRC = main.cpp FragTrap.cpp ClapTrap.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
-NAME = !!!!!!!!!!!!!!!!!
+NAME = FragTrap
 
 all: $(NAME)
 
