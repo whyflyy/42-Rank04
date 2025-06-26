@@ -6,17 +6,17 @@
 #    By: jcavadas <jcavadas@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/25 15:41:11 by jcavadas          #+#    #+#              #
-#    Updated: 2025/06/25 15:41:13 by jcavadas         ###   ########.fr        #
+#    Updated: 2025/06/26 15:16:09 by jcavadas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
 C++FLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = !!!!!!!!!!!!!!!!!!
+SRC = main.cpp Cat.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
-NAME = !!!!!!!!!!!
+NAME = Abstract
 
 all: $(NAME)
 
