@@ -1,0 +1,13 @@
+NO ./path.xpm
+SO ./path.xpm
+WE ./path.xpm
+EA ./path.xpm
+
+F 1,2,3
+C 1,2,3
+
+11111111
+10000N01
+10000001
+10000Z01
+11111111
